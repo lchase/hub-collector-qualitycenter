@@ -40,8 +40,8 @@ namespace QualityCenterMiner
                 { QualityCenterField.Type, "Bug" },
                 { QualityCenterField.Subsystem, "Not (Documentation Or \"Doc: Online Help\" Or \"SFP\" Or \"RFS\" Or \"Retail Financial Services\" Or \"RFS Scheduling\" Or \"Request Management\")" },
                 { QualityCenterField.Component, "Not (\"My Requests\")" },
-                { QualityCenterField.Category, "Not Localization" },
-                { QualityCenterField.LastChangeDate, "> " + DateTime.Now.AddDays(-7).Date.ToString("yyyy-MM-dd")}
+                { QualityCenterField.Category, "Not Localization" }/*,
+                { QualityCenterField.LastChangeDate, "> " + DateTime.Now.AddDays(-7).Date.ToString("yyyy-MM-dd")}*/
             };
 
             var defects = qc.GetDefects(query, false);
